@@ -76,8 +76,6 @@ FROM sales
 GROUP BY 1;
 
 
-
-
 -- What was the first item from the menu purchased by each customer?
 WITH cte AS(
 SELECT s.customer_id, ROW_NUMBER() OVER(PARTITION BY customer_id) rn, m.product_name
@@ -88,6 +86,7 @@ ON s.product_id = m.product_id
 SELECT customer_id, product_name
 FROM cte
 WHERE rn = 1;
+
 
 -- What is the most purchased item on the menu and how many times was it purchased by all customers? 
 WITH most_purchased_id AS(
@@ -101,6 +100,7 @@ SELECT product_name, no_of_times_bought
 FROM menu m
 JOIN most_purchased_id mp
 ON m.product_id = mp.product_id;
+
 
 -- Which item was the most popular for each customer?
 WITH cte AS(
