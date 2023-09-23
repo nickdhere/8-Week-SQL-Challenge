@@ -21,7 +21,8 @@ members
 You can inspect the entity relationship diagram and example data below.
 
 Entity Relationship Diagram
-![image](https://github.com/nickdhere/8-Week-SQL-Challenge/assets/125814305/ba3642c3-987c-4026-ac01-b6ffcb105a12)
+![image](https://github.com/nickdhere/8-Week-SQL-Challenge/assets/125814305/b7f7978a-e12b-49ba-8e09-46866b4e316e)
+
 
 
 Example Datasets
